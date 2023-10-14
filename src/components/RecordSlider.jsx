@@ -2,6 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { BiRadioCircleMarked } from "react-icons/bs";
+import { BiRadioCircle } from "react-icons/bs";
+
 import "../App.css";
 
 const RecordSlider = ({ imagePath }) => {
@@ -22,7 +25,17 @@ const RecordSlider = ({ imagePath }) => {
 
   return (
     <div className="container">
-      <img src={imagePath[imageIndex]} className="hero-image" />
+      <div className="image-slider">
+        {imagePath.map((path) => (
+          <img
+            key={path}
+            src={path}
+            className="hero-image"
+            style={{ translate: `${-100 * imageIndex}%` }}
+          />
+        ))}
+      </div>
+
       <button
         type="button"
         className="control-btn left"
@@ -37,6 +50,18 @@ const RecordSlider = ({ imagePath }) => {
       >
         <BsFillArrowRightCircleFill size={22} />
       </button>
+
+      <div className="progress-container">
+        {imagePath.map((_, index) => (
+          <button
+            key={index}
+            className="progress-btn"
+            onClick={() => setImageIndex(index)}
+          >
+            {index === imageIndex ? <BiRadioCircleMarked /> : <BiRadioCircle />}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };
