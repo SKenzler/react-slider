@@ -67,11 +67,17 @@ body {
   transform: translateX(460px);
 }
 
-.progress-btn {
+.progress-container {
   display: flex;
-  gap: 0.25rem;
-  position: absolute;
-  bottom: 0.5rem;
-  left: 50%;
-  translate: -50%;
+  justify-content: center;
+  align-content: center;
+}
+.progress-btn {
+  all: unset;
+  padding: 0 0.5em;
+  transition: scale 20ms ease-in-out;
+}
+
+.progress-btn:hover {
+  scale: 1.2;
 }

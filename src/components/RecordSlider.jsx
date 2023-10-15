@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import { BiRadioCircleMarked } from "react-icons/bs";
-import { BiRadioCircle } from "react-icons/bs";
+import { BsRecordFill } from "react-icons/bs";
+import { BsRecord } from "react-icons/bs";
 
 import "../App.css";
 
@@ -58,7 +58,7 @@ const RecordSlider = ({ imagePath }) => {
             className="progress-btn"
             onClick={() => setImageIndex(index)}
           >
-            {index === imageIndex ? <BiRadioCircleMarked /> : <BiRadioCircle />}
+            {index === imageIndex ? <BsRecordFill /> : <BsRecord />}
           </button>
         ))}
       </div>
