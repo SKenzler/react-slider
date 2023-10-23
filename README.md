@@ -1,6 +1,6 @@
 # React Slider
 
-![Scrolling Animation Sidebar Screenshot](https://github.com/SKenzler/scrolling-skills-animation/blob/master/scroll-animation-screenshot.jpg)
+![Scrolling Animation Sidebar Screenshot](https://github.com/SKenzler/react-slider/blob/master/src/assets/react-slider-image.jpg)
 
 ## About The Project
 
