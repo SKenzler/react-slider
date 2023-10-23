@@ -4,7 +4,7 @@
 
 ## About The Project
 
-A React Slider that enables a user to scroll through a series a record images.
+A React Slider that enables a user to scroll through a series of record images.
 
 ## Built With
 
